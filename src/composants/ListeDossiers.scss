@@ -1,0 +1,19 @@
+.ListeDossiers{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:0;
+    padding:0;
+    list-style:none;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#fff;
+
+    img{
+        width:100%;
+    }
+
+    li{
+        margin:0.5em;
+    }
+    
+}

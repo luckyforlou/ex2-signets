@@ -1,15 +1,16 @@
+import './Dossier.scss';
 export default function Dossier({id, titre, couleur, dateModif}) {
   return (
-    <article className="Dossier">
+    <article className="Dossier" style={{backgroundColor: couleur}}>
       <div className="couverture">
         <span className="deplacer">Déplacer</span>
         <img src={`images-dossiers/${id}.png`} alt={titre}/>
       </div>
       <div className="info">
         <h2>{titre}</h2>
-        <p>{dateModif}</p>
+        <p>Modifier: {dateModif}</p>
       </div>
-      <button>Modifier</button>
+      
     </article>
   );
 }
